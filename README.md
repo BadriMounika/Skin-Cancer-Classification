@@ -1,14 +1,14 @@
 # *Skin-Cancer-Classification*
 <img src="skin cancer Image" alt="Image description" width="800" height="500">>
-# Project Title
+# 📑Project Title
 ### DeepSkinCancer: Detection and Classification Using Advanced Deep Learning Algorithms
-# Description
+# 📌Description
 DeepSkinCancer: Detection and Classification Using Advanced Deep Learning Algorithms is a deep learning-based project aimed at early detection and classification of skin cancer using advanced Convolutional Neural Networks (CNNs). By leveraging pre-trained models like VGG16, ResNet50, DenseNet169, DenseNet201, and Xception, this project improves diagnostic accuracy in identifying nine different types of skin cancer from medical images.
 
 The project utilizes data augmentation, preprocessing techniques, and fine-tuning of CNN architectures to achieve high classification accuracy. With a dataset of 2080 images from ISIC, the model is trained using SGD optimizer and categorical crossentropy loss function, evaluating performance based on accuracy, precision, recall, and F1-score.
 
 The final trained model, which achieved the best results with Xception, is intended for deployment on AWS Cloud using Flask or FastAPI, making it accessible for real-world applications in dermatology.
-# Table of Contents
+# 📌Table of Contents
 - [Project Overview](#project-0verview)
 - [Dataset](#dataset)
 - [Dependencies](#dependencies)
@@ -18,15 +18,15 @@ The final trained model, which achieved the best results with Xception, is inten
 - [Model Architectures Used](#Model-Architectures-Used)
 - [Training Details](#training-details)
 - [Performance Metrics](#Performance-Metrics)
-## Project Overview
+## 📌Project Overview
 This project aims to classify different types of skin cancer using deep learning models. By leveraging advanced CNN architectures, we improve diagnostic accuracy and provide an AI-driven solution for early skin cancer detection.
-## Dataset
+## 📂Dataset
 Dataset Source: https://www.kaggle.com/datasets/nodoubttome/skin-cancer9-classesisic
 
 Total Images: 2080
 
 Image Size: 224x224 pixels
-## Dependencies
+## 🛠️Dependencies
 Before running the project, ensure the following Python libraries are installed:
 
 - `tensorflow`: For deep learning model development.
@@ -46,7 +46,7 @@ To install these dependencies, run the following command:
 ```sh
 pip install tensorflow keras matplotlib numpy pandas os
 ```
-## Required Imports & Libraries
+## 📌Required Imports & Libraries
 ```sh
 import tensorflow as tf
 from tensorflow.keras.applications import VGG16, ResNet50, DenseNet169, DenseNet201, Xception
@@ -58,7 +58,7 @@ import numpy as np
 import pandas as pd
 import os
 ```
-## Project Structure
+## 📁Project Structure
 ```sh
 DeepSkinCancer/
 │── dataset/               # Contains the dataset images
@@ -77,7 +77,7 @@ DeepSkinCancer/
 │── README.md              # Project documentation
 │── app.py                 # Flask/FastAPI for deployment (optional)
 ```
-## Data Preprocessing
+## 🔄Data Preprocessing
 ### Training Data Augmentation:
 ```sh
 train_datagen = ImageDataGenerator(
@@ -91,7 +91,7 @@ train_datagen = ImageDataGenerator(
 ```sh
 test_datagen = ImageDataGenerator(rescale=1./255)
 ```
-## Model Architectures Used
+## 🏗️Model Architectures Used
 We experimented with multiple deep learning models:
 
 - `VGG16`: A widely used Convolutional Neural Network (CNN) architecture with 16 layers. It follows a simple and uniform design with small 3×3 convolution filters and is known for its high accuracy in image classification tasks.
@@ -103,7 +103,7 @@ We experimented with multiple deep learning models:
 - `DenseNet201`: A deeper variant of DenseNet with 201 layers, further improving accuracy and efficiency through better feature propagation and gradient flow.
 
 - `Xception`: An extension of the Inception architecture that uses depthwise separable convolutions, significantly reducing computational cost while maintaining high performance. It achieved the best accuracy in our experiments.
-## Training Details
+## 🎯Training Details
 
 - Batch Size: 32
 
@@ -115,7 +115,7 @@ We experimented with multiple deep learning models:
 
 - Evaluation Metrics: Accuracy, F1-Score, Precision, Recall
   
-## Performance Metrics
+## 📊Performance Metrics
 
 - Best Model: Xception
 
