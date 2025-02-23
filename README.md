@@ -78,7 +78,7 @@ DeepSkinCancer/
 │── app.py                 # Flask/FastAPI for deployment (optional)
 ```
 ## Data Preprocessing
-# Training Data Augmentation:
+### Training Data Augmentation:
 ```sh
 train_datagen = ImageDataGenerator(
     rescale=1./255, 
@@ -87,7 +87,7 @@ train_datagen = ImageDataGenerator(
     horizontal_flip=False
 )
 ```
-# Test Data Preprocessing:
+### Test Data Preprocessing:
 ```sh
 test_datagen = ImageDataGenerator(rescale=1./255)
 ```
